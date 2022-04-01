@@ -1,5 +1,5 @@
 {
-  "name": "react-test",
+  "name": "react-default",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -12,6 +12,7 @@
     "prop-types": "^15.7.2",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-router-dom": "^6.3.0",
     "react-scripts": "4.0.3",
     "web-vitals": "^1.1.2"
   },
@@ -26,13 +27,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/vitaly171/react-test.git"
+    "url": "git+https://github.com/Eduard-Konovka/react-default.git"
   },
-  "author": "Vitaly Ivlev<vitaly.ivlev5@gmail.com>",
+  "author": "Eduard Konovka <ed098ua@gmail.com>",
   "bugs": {
-    "url": "https://github.com/vitaly171/react-test/issues"
+    "url": "https://github.com/Eduard-Konovka/react-default/issues"
   },
-  "homepage": "https://vitaly171.github.io/react-test",
+  "homepage": "https://Eduard-Konovka.github.io/react-default",
   "eslintConfig": {
     "extends": [
       "react-app",
