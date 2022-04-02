@@ -63,7 +63,6 @@ export default function Login() {
                 />
               </svg>
             </label>
-
             <button className={styles.logBtn} type="submit">
               вход
             </button>
