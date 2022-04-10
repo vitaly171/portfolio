@@ -1,5 +1,6 @@
 import styles from './LoginForm.module.css';
 import React from 'react';
+import { Formik } from 'formik';
 
 export default function Login() {
   return (
@@ -33,43 +34,86 @@ export default function Login() {
               />
             </svg>
           </div>
+          <Formik
+            initialValues={{ email: '', password: '' }}
+            validate={values => {
+              const errors = {};
+              if (!values.email) {
+                errors.email = 'Required';
+              } else if (
+                !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)
+              ) {
+                errors.email = 'Invalid email address';
+              }
+              return errors;
+            }}
+            onSubmit={(values, { setSubmitting }) => {
+              setTimeout(() => {
+                alert(JSON.stringify(values, null, 2));
+                setSubmitting(false);
+              }, 400);
+            }}
+          >
+            {({
+              values,
+              errors,
+              touched,
+              handleChange,
+              handleBlur,
+              handleSubmit,
+              isSubmitting,
+              /* and other goodies */
+            }) => (
+              <form className={styles.form} onSubmit={handleSubmit}>
+                <label className={styles.authLabel}>
+                  <input
+                    className={styles.input}
+                    placeholder="E-mail"
+                    name="email"
+                    onChange={handleChange}
+                    onBlur={handleBlur}
+                    value={values.email}
+                  />
+                  {errors.email && touched.email && errors.email}
+                  <svg width="21" height="16" className={styles.inputIcon}>
+                    <path
+                      d="M18 0H2C.9 0 .00999999.9.00999999 2L0 14c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2Zm0 4-8 5-8-5V2l8 5 8-5v2Z"
+                      fill="#E0E0E0"
+                    />
+                  </svg>
+                </label>
 
-          <form className={styles.form}>
-            <label className={styles.authLabel}>
-              <input
-                className={styles.input}
-                placeholder="E-mail"
-                name="email"
-              ></input>
-              <svg width="21" height="16" className={styles.inputIcon}>
-                <path
-                  d="M18 0H2C.9 0 .00999999.9.00999999 2L0 14c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2Zm0 4-8 5-8-5V2l8 5 8-5v2Z"
-                  fill="#E0E0E0"
-                />
-              </svg>
-            </label>
-
-            <label className={styles.authLabel}>
-              <input
-                className={styles.input}
-                placeholder="Пароль"
-                name="password"
-                type="password"
-              ></input>
-              <svg width="16" height="21" className={styles.inputIcon}>
-                <path
-                  d="M14 7h-1V5c0-2.76-2.24-5-5-5S3 2.24 3 5v2H2C.9 7 0 7.9 0 9v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V9c0-1.1-.9-2-2-2Zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2Zm3.1-9H4.9V5c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2Z"
-                  fill="#E0E0E0"
-                />
-              </svg>
-            </label>
-            <button className={styles.logBtn} type="submit">
-              вход
-            </button>
-            <button className={styles.regBtn} type="submit">
-              регистрация
-            </button>
-          </form>
+                <label className={styles.authLabel}>
+                  <input
+                    className={styles.input}
+                    placeholder="Пароль"
+                    name="password"
+                    type="password"
+                    onChange={handleChange}
+                    onBlur={handleBlur}
+                    value={values.password}
+                  />{' '}
+                  {errors.password && touched.password && errors.password}
+                  <svg width="16" height="21" className={styles.inputIcon}>
+                    <path
+                      d="M14 7h-1V5c0-2.76-2.24-5-5-5S3 2.24 3 5v2H2C.9 7 0 7.9 0 9v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V9c0-1.1-.9-2-2-2Zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2Zm3.1-9H4.9V5c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2Z"
+                      fill="#E0E0E0"
+                    />
+                  </svg>
+                </label>
+                <button
+                  className={styles.logBtn}
+                  type="submit"
+                  disabled={isSubmitting}
+                >
+                  вход
+                </button>
+                <button className={styles.regBtn} type="submit">
+                  регистрация
+                </button>
+              </form>
+            )}
+          </Formik>
         </div>
       </div>
     </div>
