@@ -8,6 +8,10 @@ p {
   width: 100%;
 }
 
+.test {
+  color: brown;
+}
+
 .logo {
   margin-right: 20px;
   margin-left: 20px;

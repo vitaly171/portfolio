@@ -1,21 +1,21 @@
-import styles from './LoginForm.module.css';
+import s from './LoginForm.module.css';
 import React from 'react';
 import { Formik } from 'formik';
 
 export default function Login() {
   return (
-    <div className={styles.container}>
-      <div className={styles.heroContainer}>
-        <div className={styles.loginImage}></div>
+    <div className={s.container}>
+      <div className={s.heroContainer}>
+        <div className={s.loginImage}></div>
 
-        <div className={styles.spanContainer}>
-          <span className={styles.heading}>Finance App</span>
+        <div className={s.spanContainer}>
+          <span className={s.heading}>Finance App</span>
         </div>
       </div>
-      <div className={styles.desktopContainer}>
-        <div className={styles.authForm}>
-          <div className={styles.logo}>
-            <svg className={styles.logoIcon}>
+      <div className={s.desktopContainer}>
+        <div className={s.authForm}>
+          <div className={s.logo}>
+            <svg className={s.logoIcon}>
               <path
                 d="M3.52 7.143 18.72 2.889l-.805-1.668C17.387.137 16.103-.31 15.045.23L1.44 7.143h2.08ZM23.262 2.857c-.183 0-.366.027-.549.082l-3.472 1.039L8.64 7.143h17.279l-.65-2.605c-.249-1.016-1.09-1.68-2.006-1.68Z"
                 fill="#24CCA7"
@@ -43,7 +43,8 @@ export default function Login() {
               } else if (
                 !/^[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}$/i.test(values.email)
               ) {
-                errors.email = 'Invalid email address';
+                errors.email = <p className={s.test}>Invalid email address</p>;
+                // <p className={s.test}>Invalid email address</p>;
               }
               return errors;
             }}
@@ -64,10 +65,10 @@ export default function Login() {
               isSubmitting,
               /* and other goodies */
             }) => (
-              <form className={styles.form} onSubmit={handleSubmit}>
-                <label className={styles.authLabel}>
+              <form className={s.form} onSubmit={handleSubmit}>
+                <label className={s.authLabel}>
                   <input
-                    className={styles.input}
+                    className={s.input}
                     placeholder="E-mail"
                     name="email"
                     onChange={handleChange}
@@ -75,7 +76,7 @@ export default function Login() {
                     value={values.email}
                   />
                   {errors.email && touched.email && errors.email}
-                  <svg width="21" height="16" className={styles.inputIcon}>
+                  <svg width="21" height="16" className={s.inputIcon}>
                     <path
                       d="M18 0H2C.9 0 .00999999.9.00999999 2L0 14c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2Zm0 4-8 5-8-5V2l8 5 8-5v2Z"
                       fill="#E0E0E0"
@@ -83,9 +84,9 @@ export default function Login() {
                   </svg>
                 </label>
 
-                <label className={styles.authLabel}>
+                <label className={s.authLabel}>
                   <input
-                    className={styles.input}
+                    className={s.input}
                     placeholder="Пароль"
                     name="password"
                     type="password"
@@ -94,7 +95,7 @@ export default function Login() {
                     value={values.password}
                   />{' '}
                   {errors.password && touched.password && errors.password}
-                  <svg width="16" height="21" className={styles.inputIcon}>
+                  <svg width="16" height="21" className={s.inputIcon}>
                     <path
                       d="M14 7h-1V5c0-2.76-2.24-5-5-5S3 2.24 3 5v2H2C.9 7 0 7.9 0 9v10c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V9c0-1.1-.9-2-2-2Zm-6 9c-1.1 0-2-.9-2-2s.9-2 2-2 2 .9 2 2-.9 2-2 2Zm3.1-9H4.9V5c0-1.71 1.39-3.1 3.1-3.1 1.71 0 3.1 1.39 3.1 3.1v2Z"
                       fill="#E0E0E0"
@@ -102,13 +103,13 @@ export default function Login() {
                   </svg>
                 </label>
                 <button
-                  className={styles.logBtn}
+                  className={s.logBtn}
                   type="submit"
                   disabled={isSubmitting}
                 >
                   вход
                 </button>
-                <button className={styles.regBtn} type="submit">
+                <button className={s.regBtn} type="submit">
                   регистрация
                 </button>
               </form>
