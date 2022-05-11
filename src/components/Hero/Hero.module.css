@@ -1,0 +1,9 @@
+.hero {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  background-color: #ffff;
+  padding: 40px;
+  width: 440px;
+  height: 1030px;
+}

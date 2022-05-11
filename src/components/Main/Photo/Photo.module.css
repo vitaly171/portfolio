@@ -1,0 +1,15 @@
+.photo {
+  background-image: url(../../../images/photo.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
+  border-radius: 50%;
+  margin-top: 30px;
+  height: 625px;
+  width: 150px;
+  transition: transform 0.5s linear;
+  cursor: pointer;
+}
+
+.photo:hover {
+  transform: rotate(1turn);
+}

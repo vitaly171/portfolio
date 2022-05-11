@@ -1,6 +1,10 @@
 import React from 'react';
-import Login from './components/LoginForm';
+import Container from './components/Container';
 
 export default function App() {
-  return <Login />;
+  return (
+    <>
+      <Container />
+    </>
+  );
 }

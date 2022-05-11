@@ -1,0 +1,39 @@
+.skills {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 20px;
+  width: 100%;
+  height: 100%;
+}
+.block_tittle {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: bold;
+  color: #ffff;
+  padding-bottom: 5px;
+  border-bottom: solid 2px #ffff;
+}
+
+.list {
+  padding: unset;
+}
+.item {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.25em;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  color: #ffff;
+}
+.progress {
+  display: block;
+  height: 15px;
+  width: 90%;
+  border: 2px solid #ffff;
+  background-color: rgb(26, 127, 158);
+  border-radius: 4px;
+}
