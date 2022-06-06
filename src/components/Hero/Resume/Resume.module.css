@@ -3,23 +3,38 @@ h2,
 h3 {
   margin: 0px;
 }
-.resume {
-  background-color: rgb(255, 94, 0);
-  width: 100%;
-  height: 100%;
-}
+
 .nameBlock {
   position: absolute;
   left: 0;
   right: 0;
-  margin-top: 20px;
+  top: 80px;
+  /* margin-top: 20px; */
   padding: 20px 40px;
-  background-color: rgb(17, 179, 179);
+  background-color: var(--third-bg-color);
   display: flex;
   flex-direction: column;
   align-items: flex-start;
 }
 
 .name {
+  /* font-family: 'Roboto'; */
+  font-style: normal;
+  font-weight: 900;
+  color: rgb(212, 221, 224);
   width: 100px;
+}
+.profession {
+  font-family: 'Roboto';
+  font-style: normal;
+  color: rgb(212, 221, 224);
+}
+
+.decorLine {
+  position: absolute;
+  right: 0px;
+  bottom: -10px;
+  background-color: var(--primary-bg-color);
+  width: 397px;
+  height: 10px;
 }

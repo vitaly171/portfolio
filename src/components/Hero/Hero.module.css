@@ -2,7 +2,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  background-color: #ffff;
+  background-color: var(--secondary-bg-color);
   padding: 40px;
   width: 440px;
   height: 1030px;

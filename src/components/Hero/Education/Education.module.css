@@ -1,8 +1,17 @@
-.experience {
+.education {
   background-color: rgba(17, 179, 179, 0.19);
   width: 100%;
   height: 100%;
   margin-top: 20px;
+}
+
+.list {
+  padding: unset;
+}
+.item {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
 }
 .tittle {
   font-family: 'Roboto';

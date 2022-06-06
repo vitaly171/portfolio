@@ -4,7 +4,7 @@ import React from 'react';
 export default function About() {
   return (
     <div className={s.about}>
-      <h3>About me</h3>
+      <h3 className={s.tittle}>About me</h3>
       <p>
         I am a graduate student of the University of Coimbra with in-depth
         knowledge in economics, management and marketing. Person with different

@@ -1,0 +1,65 @@
+.languages {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 45px;
+  width: 100%;
+}
+
+.list {
+  position: relative;
+  padding: unset;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.item {
+  list-style: none;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  transition: transform 0.1s linear;
+}
+.item:hover {
+  transform: scale(1.5);
+}
+
+.eng {
+  composes: item;
+  background-image: url(../../../images/united-kingdom.png);
+}
+.rus {
+  composes: item;
+  background-image: url(../../../images/russia.png);
+}
+.prt {
+  composes: item;
+  background-image: url(../../../images/portugal.png);
+}
+.esp {
+  composes: item;
+  background-image: url(../../../images/spain.png);
+}
+
+.block_tittle {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: bold;
+  color: #ffff;
+  padding-bottom: 5px;
+  border-bottom: solid 2px #ffff;
+}
+
+.popup {
+  margin: unset;
+  position: relative;
+  color: #ffff;
+  top: 30px;
+  right: 6px;
+  opacity: 0;
+}
+
+.item:hover .popup {
+  opacity: 1;
+}

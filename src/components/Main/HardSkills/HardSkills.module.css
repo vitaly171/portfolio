@@ -1,7 +1,8 @@
 .skills {
+  background-color: var(--third-bg-color);
   display: flex;
   flex-direction: column;
-  padding: 20px 45px;
+  padding: 20px 45px 0px 45px;
   width: 100%;
 }
 .block_tittle {
@@ -12,42 +13,9 @@
   padding-bottom: 5px;
   border-bottom: solid 2px #ffff;
 }
-/* .soft_skills_block {
-  background-color: aqua;
-} */
 
 .list {
   padding: unset;
-}
-.item {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  font-family: 'Roboto';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.15em;
-  list-style: none;
-  margin-bottom: 10px;
-  color: #ffff;
-}
-
-.skills__svg {
-  width: 23px;
-  height: 23px;
-  fill: #ffff;
-  margin-right: 10px;
-}
-
-.progress {
-  display: block;
-  height: 15px;
-  width: 90%;
-  border: 2px solid #ffff;
-  background-color: rgb(26, 127, 158);
-  border-radius: 4px;
 }
 
 .list_icons {
