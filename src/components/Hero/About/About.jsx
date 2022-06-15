@@ -5,12 +5,14 @@ export default function About() {
   return (
     <div className={s.about}>
       <h3 className={s.tittle}>About me</h3>
-      <p>
-        I am a graduate student of the University of Coimbra with in-depth
-        knowledge in economics, management and marketing. Person with different
-        backgrounds. Willing to face new challenges and work in great projects.
-        I have excellent analytical, reasoning and researching skills proven
-        throughout my academic training. I speak three languages
+      <p className={s.text}>
+        I’m a passionate junior full stack web developer who can develop both
+        client and server software. In addition to mastering HTML and CSS, I
+        also know how to program a browser using JavaScript and program a server
+        using Node.JS. I do not stop there; I always try to improve my skills
+        and be in the trend of new technologies. Adept at contributing to a
+        highly collaborative environment, finding solutions, and determining
+        customer satisfaction.
       </p>
     </div>
   );

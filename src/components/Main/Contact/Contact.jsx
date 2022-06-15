@@ -23,7 +23,7 @@ export default function Contact() {
             vitaly.ivlev5@gmail.com
           </a>
         </li>
-        <li className={s.item}>
+        {/* <li className={s.item}>
           <a
             className={s.link}
             href="https://www.google.com/maps/@42.6866998,23.2991859,17.83z"
@@ -33,13 +33,13 @@ export default function Contact() {
             </svg>
             Troyansky Prohod 59, Sofia
           </a>
-        </li>
+        </li> */}
       </ul>
       <ul className={s.social__list}>
         <li className={s.social__item}>
           <a
             className={s.social__link}
-            href="https://www.twitter.com/"
+            href="https://twitter.com/Vitaly_Ivlev"
             target="_blank"
             rel="noopener noreferer"
             aria-label="twitter"
@@ -52,7 +52,7 @@ export default function Contact() {
         <li className={s.social__item}>
           <a
             className={s.social__link}
-            href="https://www.facebook.com/"
+            href="https://www.facebook.com/vitaly.ivlev/"
             target="_blank"
             rel="noopener noreferer"
             aria-label="facebook"
@@ -65,7 +65,7 @@ export default function Contact() {
         <li className={s.social__item}>
           <a
             className={s.social__link}
-            href="https://www.linkedin.com/"
+            href="https://www.linkedin.com/in/vitaly-ivlev-a74aa5169/"
             target="_blank"
             rel="noopener noreferer"
             aria-label="linkedin"
@@ -78,7 +78,7 @@ export default function Contact() {
         <li className={s.social__item}>
           <a
             className={s.social__link}
-            href="https://www.github.com/"
+            href="https://github.com/vitaly171"
             target="_blank"
             rel="noopener noreferer"
             aria-label="github"
