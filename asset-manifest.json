@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/react-test/static/css/main.842b6bdb.chunk.css",
+    "main.js": "/react-test/static/js/main.566d5371.chunk.js",
+    "main.js.map": "/react-test/static/js/main.566d5371.chunk.js.map",
+    "runtime-main.js": "/react-test/static/js/runtime-main.66aa7f8b.js",
+    "runtime-main.js.map": "/react-test/static/js/runtime-main.66aa7f8b.js.map",
+    "static/css/2.bc922b9c.chunk.css": "/react-test/static/css/2.bc922b9c.chunk.css",
+    "static/js/2.f7fb7307.chunk.js": "/react-test/static/js/2.f7fb7307.chunk.js",
+    "static/js/2.f7fb7307.chunk.js.map": "/react-test/static/js/2.f7fb7307.chunk.js.map",
+    "index.html": "/react-test/index.html",
+    "static/css/2.bc922b9c.chunk.css.map": "/react-test/static/css/2.bc922b9c.chunk.css.map",
+    "static/css/main.842b6bdb.chunk.css.map": "/react-test/static/css/main.842b6bdb.chunk.css.map",
+    "static/js/2.f7fb7307.chunk.js.LICENSE.txt": "/react-test/static/js/2.f7fb7307.chunk.js.LICENSE.txt",
+    "static/media/Photo.module.css": "/react-test/static/media/photo.d773a4b3.jpg",
+    "static/media/Languages.module.css": "/react-test/static/media/united-kingdom.b9a2ba74.png",
+    "static/media/sprite.007f7437.svg": "/react-test/static/media/sprite.007f7437.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.66aa7f8b.js",
+    "static/css/2.bc922b9c.chunk.css",
+    "static/js/2.f7fb7307.chunk.js",
+    "static/css/main.842b6bdb.chunk.css",
+    "static/js/main.566d5371.chunk.js"
+  ]
+}
