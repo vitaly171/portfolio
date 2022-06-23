@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/react-test/static/css/main.f04ea5d2.chunk.css",
-    "main.js": "/react-test/static/js/main.23ccb53d.chunk.js",
-    "main.js.map": "/react-test/static/js/main.23ccb53d.chunk.js.map",
+    "main.js": "/react-test/static/js/main.c3177acf.chunk.js",
+    "main.js.map": "/react-test/static/js/main.c3177acf.chunk.js.map",
     "runtime-main.js": "/react-test/static/js/runtime-main.66aa7f8b.js",
     "runtime-main.js.map": "/react-test/static/js/runtime-main.66aa7f8b.js.map",
     "static/css/2.bc922b9c.chunk.css": "/react-test/static/css/2.bc922b9c.chunk.css",
@@ -14,13 +14,13 @@
     "static/js/2.f7fb7307.chunk.js.LICENSE.txt": "/react-test/static/js/2.f7fb7307.chunk.js.LICENSE.txt",
     "static/media/Photo.module.css": "/react-test/static/media/photo.d773a4b3.jpg",
     "static/media/Languages.module.css": "/react-test/static/media/united-kingdom.b9a2ba74.png",
-    "static/media/sprite.007f7437.svg": "/react-test/static/media/sprite.007f7437.svg"
+    "static/media/sprite.7a13f8bf.svg": "/react-test/static/media/sprite.7a13f8bf.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.66aa7f8b.js",
     "static/css/2.bc922b9c.chunk.css",
     "static/js/2.f7fb7307.chunk.js",
     "static/css/main.f04ea5d2.chunk.css",
-    "static/js/main.23ccb53d.chunk.js"
+    "static/js/main.c3177acf.chunk.js"
   ]
 }
