@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
 # Settings
 .DS_Store/ 
 .vscode/ 
@@ -119,3 +120,6 @@ dist
 .env.development.local
 .env.test.local
 .env.production.local
+=======
+node_modules
+>>>>>>> Stashed changes
