@@ -1,5 +1,5 @@
 {
-  "name": "react-test",
+  "name": "portfolio",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -28,13 +28,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/train171/react-test.git"
+    "url": "git+https://github.com/train171/portfolio.git"
   },
   "author": "Vitaly Ivlev <vitaly.ivlev5@gmail.com>",
   "bugs": {
-    "url": "https://github.com/train171/react-test/issues"
+    "url": "https://github.com/train171/portfolio/issues"
   },
-  "homepage": "https://train171.github.io/react-test",
+  "homepage": "https://train171.github.io/portfolio",
   "eslintConfig": {
     "extends": [
       "react-app",
